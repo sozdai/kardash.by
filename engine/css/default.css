@@ -1,0 +1,459 @@
+/*--------------------------------------------------------------------------
+ Project 		: ME+ | Responsive Modern V-card
+ Author 		: Mias Marthinus
+----------------------------------------------------------------------------
+ Copyright (c) 2016 - MiasStudio 
+--------------------------------------------------------------------------*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+							  TABLE OF CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[1] For All Screen
++-- [1.1] Key Frame
++--	[1.2] Loading Panel
++--	[1.3] Basic
+|	
+[2] For Large Screen
++-- [2.1] Standar Element DOM Setting
++-- [2.2] Classes	
++-- [2.3] IDs	
+|
+[3] For Small Screen
++-- [3.1] Standar Element DOM Setting
++-- [3.2] Classes	
++-- [3.3] IDs	
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@charset "utf-8";
+
+/* 
+===============================================================================
+ ALL SCREEN
+===============================================================================
+*/
+
+/* KEYFRAMES */
+
+@keyframes box1 {
+	from{
+		-ms-transform:rotate(0deg); 
+		-webkit-transform:rotate(0deg); 
+		transform:rotate(0deg);
+	}
+	to{
+		-ms-transform:rotate(360deg); 
+		-webkit-transform:rotate(360deg); 
+		transform:rotate(360deg);
+	}
+}
+@keyframes box2 {
+	from{
+		-ms-transform:rotate(0deg); 
+		-webkit-transform:rotate(0deg); 
+		transform:rotate(0deg);
+	}
+	to{
+		-ms-transform:rotate(-360deg); 
+		-webkit-transform:rotate(-360deg); 
+		transform:rotate(-360deg);
+	}
+}
+
+
+/* LOADING PANEL */
+
+#loading-panel{
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+	overflow:hidden;
+	z-index:1;
+			
+	-webkit-transition:opacity 0.75s, -webkit-transform 0.75s;
+			transition:opacity 0.75s, transform 0.75s;
+	
+	-webkit-transition-timing-function:ease;
+			transition-timing-function:ease;
+}
+
+#loading-panel > div{
+	position:absolute;
+	border-style:solid;
+	border-width:1vmax;
+}
+
+#loading-panel > div:nth-child(1){
+	width:10vmax;
+	height:10vmax;
+	top:calc( 50% - 5vmax );
+	left:calc( 50% - 5vmax );
+	border-radius:0 50%;
+	
+	animation-name: box1;
+    animation-duration: 5s;
+	animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#loading-panel > div:nth-child(2){
+	width:10vmax;
+	height:10vmax;
+	top:calc( 50% - 5vmax );
+	left:calc( 50% - 5vmax );
+	border-radius:50% 0;
+	
+	animation-name: box2;
+    animation-duration: 3s;
+	animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* BASIC */
+
+body{
+	overflow-x:hidden;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:inherit;
+	margin:0;
+	padding:0;
+}
+
+img{ max-width:100%; }
+
+a{ 
+	text-decoration:none; 
+	color:inherit;
+			
+	-webkit-transition:all 0.3s;
+			transition:all 0.3s;
+	
+	-webkit-transition-timing-function:ease;
+			transition-timing-function:ease;
+}
+
+a{
+	cursor:pointer;
+}
+
+a:hover{
+	opacity:0.5;
+}
+
+ul{
+	padding:0;
+	list-style-type:none;
+}
+
+#canvas{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;
+	opacity:0;
+	z-index:2;
+			
+	-webkit-transition:opacity 0.75s, -webkit-transform 0.75s;
+			transition:opacity 0.75s, transform 0.75s;
+	
+	-webkit-transition-timing-function:ease-in-out;
+			transition-timing-function:ease-in-out;
+}
+
+.button{
+	display:inline-block;
+	cursor:pointer;
+	
+	-webkit-transition:all 0.3s;
+			transition:all 0.3s;
+	
+	-webkit-transition-timing-function:ease;
+			transition-timing-function:ease;
+}
+
+/*
+=============================================================================== 
+ LARGE SCREEN
+===============================================================================
+*/
+@media only screen and (min-device-width:993px){
+
+	p{
+		margin:2.5vw 0 0 0;
+	}
+	
+	ul{
+		margin:2.5vw 0 0 0;
+	}
+	
+	ul > li{
+		margin:1.25vw 0;
+	}
+	
+	hr{
+		height:0.375vw;
+		border-style:solid;
+		border-width:0.125vw 0;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 CLASSes
+	---------------------------------------------------------------------------
+	*/
+	
+	/* sections */
+
+	.section{
+		padding:2.5vw 2.5vw 5vw 2.5vw;
+	}
+	
+	.section-full{
+		width:calc( 100% + 5vw );
+		margin:0 0 0 -2.5vw;
+	}
+	
+	.section-title > span{
+		padding:0 2.5vw;
+	}
+	
+	/* paddings */
+	
+	.padding-narrow{
+		padding:1.25vw;
+	}
+	
+	.padding-normal{
+		padding:2.5vw;
+	}
+	
+	/* buttons */
+	.button{
+		margin:0.625vw;
+		padding:1.25vw;
+	}
+	
+	.button-full,
+	.button-framed{
+		border-style:solid;
+		border-width:0.125vw;
+	}
+	
+	/* frame */
+	
+	.frame-thin{
+		border-style:solid;
+		border-width:0.125vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 IDs
+	---------------------------------------------------------------------------
+	*/
+	
+	#canvas{
+		-webkit-transform:scale(0.8, 0.8);
+		    -ms-transform:scale(0.8, 0.8);
+		        transform:scale(0.8, 0.8);
+	}
+	
+	/* MAIN MENU */
+	
+	#main-menu{
+		position:absolute;
+		top:0;
+		left:auto;
+		right:0;
+		height:5vw;
+		width:65%;
+		z-index:5;
+		cursor:default;
+	}
+	
+	/* main menu item */
+	
+	#main-menu > span,
+	#main-menu > a{
+		padding:0.625vw 1.25vw;
+		cursor:pointer;
+		
+		-webkit-transition:all 0.3s;
+				transition:all 0.3s;
+		
+		-webkit-transition-timing-function:ease;
+				transition-timing-function:ease;
+	}
+	
+	#main-menu > .active{
+		cursor:default !important;
+	}
+	
+	#main-menu > .active,
+	#main-menu > span:hover{
+		opacity:0.25;
+	}
+	
+	/* AVAILABILITY */
+	
+	#availability{
+		position:absolute;
+		top:0;
+		left:0;
+		width:35%;
+		height:5vw;
+	}
+	
+	
+}
+
+/* 
+===============================================================================
+ SMALL SCREEN 
+===============================================================================
+*/
+@media only screen and (max-device-width:992px){
+	
+	p{
+		margin:5vw 0 0 0;
+	}
+	
+	ul{
+		margin:5vw 0 0 0;
+	}
+	
+	ul > li{
+		margin:2.5vw 0;
+	}
+	
+	hr{
+		height:1.25vw;
+		border-style:solid;
+		border-width:0.25vw 0;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 CLASSes
+	---------------------------------------------------------------------------
+	*/
+	
+	/* sections */
+
+	.section{
+		padding:7.5vw 5vw 10vw 5vw;
+	}
+	
+	.section-full{
+		width:calc( 100% + 10vw );
+		margin:0 0 0 -5vw;
+	}
+	
+	.section-title > span{
+		padding:0 2.5vw;
+	}
+	
+	/* paddings */
+	
+	.padding-narrow{
+		padding:2.5vw;
+	}
+	
+	.padding-normal{
+		padding:5vw;
+	}
+	
+	/* buttons */
+	.button{
+		margin:1.25vw;
+		padding:2.5vw;
+	}
+	
+	.button-full,
+	.button-framed{
+		border-style:solid;
+		border-width:0.25vw;
+	}
+	
+	/* frame */
+	
+	.frame-thin{
+		border-style:solid;
+		border-width:0.25vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 IDs
+	---------------------------------------------------------------------------
+	*/
+	
+	#canvas{
+		-webkit-transform:scale(0.8, 0.8);
+		    -ms-transform:scale(0.8, 0.8);
+		        transform:scale(0.8, 0.8);
+		 -webkit-overflow-scrolling:touch;
+	}
+	
+	/* MAIN MENU */
+	
+	#main-menu{
+		position:absolute;
+		top:auto;
+		bottom:0;
+		left:0;
+		width:100vw;
+		height:15vw;
+		z-index:5;
+		cursor:default;
+	}
+	
+	/* main menu item */
+	
+	#main-menu > span,
+	#main-menu > a{
+		padding:1.25vw 2.5vw;
+		cursor:pointer;
+		
+		-webkit-transition:all 0.3s;
+				transition:all 0.3s;
+		
+		-webkit-transition-timing-function:ease;
+				transition-timing-function:ease;
+	}
+	
+	#main-menu > .active{
+		cursor:default !important;
+	}
+	
+	#main-menu > .active,
+	#main-menu > span:hover{
+		opacity:0.25;
+	}
+	
+	/* AVAILABILITY */
+	
+	#availability{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100vw;
+		height:15vw;
+	}
+	
+	
+}

@@ -1,0 +1,95 @@
+{
+    "settings":{
+        "show ad":"YES",
+        "requestHeader":[],
+        "upAllClickCount":"1",
+        "fullVersionLink":"itms-apps://itunes.apple.com/app/id1088699189",
+        "lightVersionLink":"itms-apps://itunes.apple.com/app/id1088581596"
+        },
+    "exceptions":{
+        "Легковые автомобили":"http://ab.onliner.by/",
+        "Мотоциклы":"http://mb.onliner.by/"
+        },
+    "baraholkaXpath":{
+        "xpathQueryString":"//td[@class='frst ph colspan']/..",
+        "listCategoryXpath":"//div[@class='cm-onecat']",
+        "listCategoryLinkXpath":"//small/a",
+        "listItemXpath":"//li",
+        "listItemLinkXpath":"//a",
+        "listItemCount":"//sup",
+        "topicTypeXpath":"m-imp",
+        "titleXpath":"//h2[@class='wraptxt']/a",
+        "descriptionXpath":"//h2[@class='wraptxt']/../p[2]",
+        "categoryXpath":"//a[@class='gray-link']",
+        "sellTypeXpath":"//div[@class='txt-i']/div",
+        "cityXpath":"//p[@class='ba-signature']/strong",
+        "topicIDXpath":"href",
+        "urlXpath":"href",
+        "topicPriceXpath":"//td[@class='cost']/big/strong",
+        "topicCurrencyXpath":"//td[@class='cost']/big",
+        "topicTorgXpath":"//small[@class='cost-torg']",
+        "topicAuthorXpath":"//a[@class='gray']",
+        "imageUrlXpath":"http://content.onliner.by/baraholka/icon_large/",
+        "commentsCountXpath":"//p[@class='ba-post-coms']//span",
+        "upTopicTime":"//p[@class='ba-post-up']"
+        },
+    "adXpath":{
+        "xpathQueryString":"//td[@class='frst ph colspan']/..",
+        "xpathUserName":"//p[@class='user-name']/a",
+        "upButtonXpath":"//div[@class='b-up-section-5 arrow-right']/a",
+        "urlXpath":"href",
+        "topicIDXpath":"topicid",
+        "topicPriceXpath":"expectedprice",
+        "topicTypeXpath":"type",
+        "titleXpath":"//h2[@class='wraptxt']/a",
+        "timeLeftXpath":"//*[@class='time']",
+        "imageUrlXpath":"http://content.onliner.by/baraholka/icon/",
+        "categoryXpath":"//a[@class='gray-link']",
+        "commentsCountXpath":"//a[@class='c-read-replies-count']",
+        "commentsUnreadCountXpath":"//a[@class='c-org']",
+        "sellTypeXpath":"//div[@class='txt-i']/div",
+        "messagesCountXpath":"//*[@class='new_privmsg_count']"
+        },
+    "ad":{
+        "1000":{
+        "link": "http://baraholka.onliner.by/viewtopic.php?t=11262772",
+        "title":"продам Apexi RSM + G-sensor",
+        "city":"Минск",
+        "category": 2,
+        "price": "150",
+        "currency": "у.е.",
+        "bargain": "",
+        "type":"",
+        "comments":"",
+        "isAd":"",
+        "searchCriteria":"iphone"
+        },
+        "1001":{
+        "link": "http://baraholka.onliner.by/viewtopic.php?t=11262772",
+        "title":"продам Apexi RSM + G-sensor1",
+        "city":"Минск",
+        "category": 2,
+        "price": "150",
+        "currency": "у.е.",
+        "bargain": "",
+        "type":"",
+        "comments":"",
+        "isAd":"",
+        "searchCriteria":"iphone"
+        },
+        "1002":{
+        "link": "http://baraholka.onliner.by/viewtopic.php?t=11262772",
+        "title":"продам Apexi RSM + G-sensor2",
+        "city":"Минск",
+        "category": 2,
+        "price": "150",
+        "currency": "у.е.",
+        "bargain": "",
+        "type":"",
+        "comments":"",
+        "isAd":"",
+        "searchCriteria":"iphone"
+        }
+        }
+     
+}

@@ -1,0 +1,730 @@
+﻿<!DOCTYPE html>
+
+<!--========================================================================
+ Project 		: ME+ | Responsive Modern V-card
+ Author 		: Mias Marthinus
+============================================================================
+ Copyright (c) 2016 - MiasStudio 
+=========================================================================-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Change with your title  -->
+<title>ME+ | Responsive Modern V-card</title>
+<!-- Icon link: replace image directly in folder: engine/img/favicon.ico -->
+<link rel="icon" type="image/ico" href="engine/img/favicon.ico" />
+
+<!-- 
+================================================================================================================ 
+ CSS lINK 
+================================================================================================================ 
+-->
+<!-- font awesome | https://fortawesome.github.io/Font-Awesome/icons/ -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- miasstudio -->
+<link type="text/css" rel="stylesheet" href="engine/css/miasstudio-1.0.0.min.css" />
+<!-- layout style -->
+<link type="text/css" rel="stylesheet" href="engine/css/default.css" />
+<!-- typography style 
+	--------------------
+	 TYPOGRAPHY CHOISES
+	--------------------
+	
+	- typography.css (default)
+	- typography-modern.css
+	- typography-writing.css
+	- typography-typing.css
+	- typography-condensed.css
+-->
+<link type="text/css" rel="stylesheet" href="engine/css/typography.css" />
+<!-- color style 
+	---------------
+	 COLOR CHOISES
+	---------------
+	
+	- color.css (default)
+	- color-clean.css
+	- color-dark.css
+-->
+<link type="text/css" rel="stylesheet" href="engine/css/color.css" />
+<!-- specific page style -->
+<link type="text/css" rel="stylesheet" href="engine/css/page-portofolio.css" />
+<!-- customize style -->
+<link type="text/css" rel="stylesheet" href="engine/css/customize-portofolio.css" />
+
+</head>
+<body>
+
+<!-- 
+================================================================================================================
+ LOADING PANEL 
+================================================================================================================ 
+-->
+<div id="loading-panel">
+	<div></div>
+	<div></div>
+</div>
+
+<!-- 
+================================================================================================================
+ CANVAS 
+================================================================================================================ 
+-->
+<div id="canvas" class="ms-row">
+
+	<!-- 
+	************************************************************************************************************
+	 LAYOUTING
+	************************************************************************************************************
+	-->
+	<div>
+		
+		<!-- 
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		 IMAGE COVER 
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		-->
+		<div id="portofolio-picture">
+			<!-- image scrim : don't delete this -->
+			<div></div>
+			<!-- page title -->
+			<div class="ms-text-center padding-narrow font-bold">
+				<hr />
+				<h3>
+					Portofolio <!-- #EDIT -->
+				</h3>
+				<hr />
+			</div>
+		</div>
+		
+		<!-- 
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		 CONTENT 
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		-->
+		<div>
+	
+			<!-- SECTION 0 : HEADER -->
+			<div id="page-resume-title" class="section-full padding-normal ms-text-center bg-dimmed">
+				<!-- opening word -->
+				<h5>
+					Through brand strategy and design, I craft experiences that help brands stand out as well as stand for something. <!-- #EDIT : your nick name -->
+				</h5>
+			</div>
+				
+			<!-- SECTION 1 : CATEGORY SELECTOR -->
+			<div id="portofolio-category" class="section-full padding-normal ms-text-center">
+				
+				<!-- 
+					NOTE:
+					
+					1. Just change category class same as the item "category-[item category name]" | ex: category-product
+					2. You can attach only one category
+				-->
+			
+				<!-- BUTTON ALL : DO NOT DELETE THIS BUTTON !!!!!! -->
+				<span class="button button-framed active category-all">
+					All
+				</span>
+				
+				<span class="button button-framed category-product"> <!-- #EDIT : change the category class -->
+					Product
+				</span>
+				
+				<span class="button button-framed category-event"> <!-- #EDIT : change the category class -->
+					Event
+				</span>
+				
+				<span class="button button-framed category-b-and-w"> <!-- #EDIT : change the category class -->
+					B&W
+				</span>
+				
+			</div>
+			
+			<!-- SECTION 2 : PORTOFOLIO ITEM -->
+			<div id="portofolio-items" class="section-full padding-normal bg-dimmed">
+			
+				<!-- 
+					NOTE:
+					
+					1. Just change category class same as the button "category-[item category name]" | ex: category-product
+					2. You can add more than one category for one item
+				-->
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-product category-event"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Time <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 December 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-product"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							Prize <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 August 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-event"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Eye <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-b-and-w"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-event"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-product"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-b-and-w"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-event category-b-and-w"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+				<!-- ITEM -->
+				<div style="background-image:url('engine/img/placeholder.jpg')" class="category-product"> <!-- #EDIT : change the url & category class -->
+					<div>
+						<!-- title -->
+						<h4 class="font-bold">
+							The Title <!-- #EDIT -->
+						</h4>
+						<hr />
+						<!-- list -->
+						<ul>
+							<!-- category -->
+							<li>
+								<strong>
+									Category :
+								</strong>
+								Product, Event <!-- #EDIT -->
+							</li>
+							<!-- date -->
+							<li>
+								<strong>
+									Date :
+								</strong>
+								20 May 2015 <!-- #EDIT -->
+							</li>
+							<!-- client -->
+							<li>
+								<strong>
+									Client :
+								</strong>
+								Themeforest <!-- #EDIT -->
+							</li>
+							<!-- external link -->
+							<li>
+								<strong>
+									External Link :
+								</strong>
+								<a class="font-underline" href="themeforest.net"> <!-- #EDIT -->
+									themeforest.net <!-- #EDIT -->
+								</a>
+							</li>
+						</ul>
+						<!-- description -->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Cras eros lorem, pretium ornare velit eu, luctus imperdiet nunc. 
+							Praesent venenatis nunc non mattis consequat. 
+						</p>
+					</div>
+				</div>
+			
+			</div>
+			
+			<!-- SECTION 3 : PAGINATION -->
+			<div class="section-full padding-normal ms-text-center">
+				
+				<!-- ACTIVE BUTTON : change class "button-frame" to "button-full" -->
+				<!-- DEACTIVE BUTTON : change class "button-full" to "button-frame" -->
+				<a class="button button-full" href="#">
+					1
+				</a>
+				
+				<a class="button button-framed" href="#">
+					2
+				</a>
+				
+				<a class="button button-framed" href="#">
+					3
+				</a>
+				
+				<a class="button button-framed" href="#">
+					4
+				</a>
+				
+			</div>
+			
+			<!-- SECTION 3 : PAGINATION -->
+			<div class="section-full padding-narrow ms-text-center bg-reversed">
+				<span class="fa fa-copyright"></span>
+				2016 - Mias Studio <!-- #EDIT -->
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<!-- 
+	************************************************************************************************************
+	 PORTOFOLIO DETAIL VIEW
+	************************************************************************************************************
+	-->
+	<!-- DO NOT DELETE THIS ELEMENT !!!!!!!!!!!! -->
+	<div id="portofolio-detail-view" class="portofolio-detail-view-hide">
+		<!-- picture -->
+		<div></div>
+		<!-- detail -->
+		<div class="padding-normal bg-dimmed"></div>
+		<!-- close button -->
+		<div id="portofolio-detail-view-close" class="button button-full">
+			<span class="fa fa-close"></span>
+		</div>
+	</div>
+	
+	<!-- 
+	************************************************************************************************************
+	 MAIN MENU
+	************************************************************************************************************
+	-->
+	<nav id="main-menu" class="font-bold ms-text-center">
+		
+		<a id="main-menu-resume" href="index.html#resume"> <!-- #EDIT : change the href -->
+			Resume
+		</a>
+		
+		<span id="main-menu-portofolio" class="active">
+			Portofolio
+		</span>
+		
+		<a id="main-menu-hire" href="index.html#hire"> <!-- #EDIT : change the href -->
+			Hire Me
+		</a>
+		
+		<a id="main-menu-blog" href="blog.html"> <!-- #EDIT : change the href -->	
+			Blog
+		</a>
+		
+	</nav>
+	
+	<!-- 
+	************************************************************************************************************
+	 availability
+	************************************************************************************************************
+	-->
+	<div id="availability" class="font-bold ms-text-center font-heading-5 ec-slideshow ec-animation-slideFade ec-speed-slow ec-delay-5000">
+		<span>Unvailable for Job</span> <!-- DONT DELETE THIS LINE!! To change availability go to javascript custom setting in the bottom of this file  -->
+		<!-- 
+			- You can add more slide message by copy this span below then copy it 
+			- There's no limit for slide message you can add, it's all up to You
+		-->
+		<span>on vacation</span>
+	</div>
+	
+</div>
+
+<!-- 
+================================================================================================================
+ JAVASCRIPT CUSTOMIZE SETTING
+================================================================================================================ 
+-->
+<script type="text/javascript">
+	var
+	// PLEASE DO NOT DELETE ALL OR ONE OF THESE VARIABLES!!
+	
+	availability = false // << [boolean] true = available | false = unavailable
+	
+	
+</script>
+
+<!-- 
+================================================================================================================
+ JAVASCRIPT LINK 
+================================================================================================================ 
+-->
+<!-- jQuery -->
+<script type="text/javascript" src="engine/js/jquery-2.2.1.min.js"></script>
+<!-- easyCall -->
+<script type="text/javascript" src="engine/js/easycall.3.3.0.min.js"></script>
+<!-- default -->
+<script type="text/javascript" src="engine/js/default.js"></script>
+<!-- specific page -->
+<script type="text/javascript" src="engine/js/page-portofolio.js"></script>
+
+</body>	
+</html>

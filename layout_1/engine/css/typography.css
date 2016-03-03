@@ -1,0 +1,271 @@
+/*--------------------------------------------------------------------------
+ Project 		: ME+ | Responsive Modern V-card
+ Author 		: Mias Marthinus
+----------------------------------------------------------------------------
+ Copyright (c) 2016 - MiasStudio 
+--------------------------------------------------------------------------*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+							  TABLE OF CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[1] For All Screen
++-- [1.1] Font Face (google font import)
++-- [1.2] Standard Element DOM Setting 
+|	
+[2] For Large Screen
++-- [2.1] Font Heading Setting 
++-- [2.2] Font Normal Setting 
++-- [2.3] Other Setting 
+|
+[3] For Small Screen
++-- [3.1] Font Heading Setting 
++-- [3.2] Font Normal Setting 
++-- [3.3] Other Setting
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@charset "utf-8";
+
+/* 
+===============================================================================
+ FONT FACE
+===============================================================================
+*/
+
+/* GOOGLE FONTs */
+/* 
+===============================================================================
+ ALL SCREEN
+===============================================================================
+*/
+
+body,
+p,
+ul,
+textarea,
+input{
+	font-family:"Roboto", sans-serif;
+	font-weight:300;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:"Roboto", serif;
+	text-transform:uppercase;
+	font-weight:400;
+}
+
+strong,
+.font-bold{
+	font-weight:700;
+}
+
+.font-underline{
+	text-decoration:underline;
+}
+
+.font-italic{
+	font-style:italic;
+}
+
+.button{
+	text-transform:uppercase;
+}
+
+/*
+=============================================================================== 
+ LARGE SCREEN
+===============================================================================
+*/
+@media (min-width:993px){
+	
+	/*
+	---------------------------------------------------------------------------
+	 HEADING
+	---------------------------------------------------------------------------
+	*/
+	
+	.font-heading-1,
+	h1{
+		font-size:3.5vw;
+		line-height:5.25vw;
+		word-spacing:0.5vw;
+		letter-spacing:0.5vw;
+	}
+	
+	.font-heading-2,
+	h2{
+		font-size:3vw;
+		line-height:4.5vw;
+		word-spacing:0.4vw;
+		letter-spacing:0.4vw;
+	}
+	
+	.font-heading-3,
+	h3{
+		font-size:2.5vw;
+		line-height:3.75vw;
+		word-spacing:0.3vw;
+		letter-spacing:0.3vw;
+	}
+	
+	.font-heading-4,
+	h4{
+		font-size:2vw;
+		line-height:3vw;
+		word-spacing:0.2vw;
+		letter-spacing:0.2vw;
+	}
+	
+	.font-heading-5,
+	h5{
+		font-size:1.5vw;
+		line-height:2.25vw;
+		word-spacing:0.1vw;
+		letter-spacing:0.1vw;
+	}
+	
+	h6{
+		line-height:1.5vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 NORMAL
+	---------------------------------------------------------------------------
+	*/
+	
+	body,
+	ul,
+	p,
+	h6,
+	.font-normal,
+	.button{
+		font-size:1vw;
+		word-spacing:0.05vw;
+		letter-spacing:0.05vw;
+	}
+	
+	body,
+	ul,
+	p{
+		line-height:1.75vw;
+	}
+	
+	.font-normal,
+	.button{
+		line-height:1vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 OTHER
+	---------------------------------------------------------------------------
+	*/
+	
+	#availability > span,
+	#main-menu > span,
+	#main-menu > a{
+		line-height:5vw !important;
+		text-transform:uppercase;
+	}
+}
+/* 
+===============================================================================
+ SMALL SCREEN 
+===============================================================================
+*/
+@media (max-width:992px){
+	
+	/*
+	---------------------------------------------------------------------------
+	 HEADING
+	---------------------------------------------------------------------------
+	*/
+	
+	.font-heading-1,
+	h1{
+		font-size:6vw;
+		line-height:9vw;
+		word-spacing:0.5vw;
+		letter-spacing:0.5vw;
+	}
+	
+	.font-heading-2,
+	h2{
+		font-size:5.5vw;
+		line-height:8.25vw;
+		word-spacing:0.4vw;
+		letter-spacing:0.4vw;
+	}
+	
+	.font-heading-3,
+	h3{
+		font-size:5vw;
+		line-height:7.5vw;
+		word-spacing:0.3vw;
+		letter-spacing:0.3vw;
+	}
+	
+	.font-heading-4,
+	h4{
+		font-size:4.5vw;
+		line-height:6.75vw;
+		word-spacing:0.2vw;
+		letter-spacing:0.2vw;
+	}
+	
+	.font-heading-5,
+	h5{
+		font-size:4vw;
+		line-height:6vw;
+		word-spacing:0.1vw;
+		letter-spacing:0.1vw;
+	}
+	
+	h6{
+		line-height:5.25vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 NORMAL
+	---------------------------------------------------------------------------
+	*/
+	
+	body,
+	ul,
+	p,
+	h6,
+	.font-normal,
+	.button{
+		font-size:3.5vw;
+		word-spacing:0.05vw;
+		letter-spacing:0.05vw;
+	}
+	
+	body,
+	ul,
+	p{
+		line-height:6.125vw;
+	}
+	
+	.font-normal,
+	.button{
+		line-height:3.5vw;
+	}
+	
+	/*
+	---------------------------------------------------------------------------
+	 OTHER
+	---------------------------------------------------------------------------
+	*/
+	
+	#availability > span,
+	#main-menu > span,
+	#main-menu > a{
+		line-height:15vw !important;
+		text-transform:uppercase;
+	}
+}
